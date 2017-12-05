@@ -5,14 +5,7 @@ require_relative 'neighbor_hood'
 
 
 describe NeighborHood do
-=begin
-  it 'neighborhood with no alive cells will contain no alive cells in the next generation ' do
-    neighborhood= NeighborHood.new
-    neighborhood.tick
-    alive_cells= neighborhood.alive_cells
-    assert_equal 0, alive_cells
-  end
-=end
+
   it 'neighborhood with one alive cell will die in the next generation' do
     cell = Cell.new(Location::CENTER)
     c2 = Cell.new(Location::NORTH)
@@ -33,15 +26,6 @@ describe NeighborHood do
     #assert_equal 2, neighborhood.alive_cells
     assert c1.alive?
   end
-=begin
-  it 'two cells are neighbors if they are next to each other' do
-    c1= Cell.new(0,0)
-    c2= Cell.new(0,1)
-    neighborhood = NeighborHood.new
-    result = neighborhood.neighbors?(c1,c2)
-    assert result
-  end
-=end
 
   it 'number of neighbors is 0 for a cell that is lonely' do
     c1= Cell.new(Location::CENTER)
