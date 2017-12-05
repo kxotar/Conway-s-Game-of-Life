@@ -11,7 +11,8 @@ ruby <test_stub_name.rb> <br>
 For Example :- <br>
   for test_cell.rb run :- <br>
     ruby test_cell.rb <br>
-    
+<b>To run all the test cases run :- <br> ruby test_game_of_life.rb</b>
+
 The main class is NeighborHood, to verify if all the tests for Conway's Game of Life Rule are covered please refer to test_game_of_life.rb <br>
 
 Test#1 :- neighborhood with one alive cell will die in the next generation <br>
