@@ -12,19 +12,6 @@ describe Cell do
     cell.die
     refute cell.alive?
   end
-=begin
-  it 'knows if it is in the center' do
-    cell= Cell.new(0,0)
-    assert cell.center?
-  end
-=end
-=begin
-  it 'has a location' do
-    cell= Cell.new(Location::NORTH)
-    result= cell.location
-    assert_equal Location::NORTH, result
-  end
-=end
   it 'dead cell can be born again' do
     cell = Cell.new(Location::CENTER)
     cell.die
