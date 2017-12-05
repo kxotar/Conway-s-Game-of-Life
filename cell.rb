@@ -15,15 +15,6 @@ class Cell
   def die
     @alive= false
   end
-=begin
-  def center?
-    (@x== 0 and @y==0)
-  end
-  def location
-    Location.for(@x,@y)
-  end
-=end
-
   def dead?
     !alive?
   end
