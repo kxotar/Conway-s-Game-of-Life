@@ -61,7 +61,7 @@ By using same matrix we used in previous test, we'll seed the board with three c
 Now after iteration one we'll be able to assert that if cell has 2 alive cells in neighbourhood, it will stay alive in next generation, as Neighbours for cell at CENTER ie. [0,0] have two neighbours, validates the Rule 2 of Game of Life.
 
 Test#3 a cell with 4 alive cells will die of overcrowding <br>
-To simulate this rule let's seed the board with four cells CENTER[0,0],NORTH[0,1],NORTHWEST-1,1,WEST[-1,0],SOUTHWEST[-1,-1] <br>
+To simulate this rule let's seed the board with four cells CENTER [0,0],NORTH [0,1] ,NORTHWEST [-1,1] ,  WEST [-1,0] , SOUTHWEST [-1,-1] <br>
 The test will assert that the cell in CENTER ie. [0,0] won't servive to next generation, hence validates the Rule 3 of Game of Life
 
 Test#4 a dead cell with three alive cells as neighbors will be born in the next generation <br>
